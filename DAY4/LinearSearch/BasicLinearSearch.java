@@ -14,12 +14,14 @@ public class BasicLinearSearch {
         }
         System.out.println("Enter the value you want to find in an Array");
         int key = sc.nextInt();
+        int ans = -1;
         for (int i=0;i<n;i++){
             if(a[i]==key){
                 System.out.println("Value" +key +" find at index : " + i);
+                ans = i;
             }
         }
-
+        if(ans==-1) System.out.println("-1");
     }
 
 

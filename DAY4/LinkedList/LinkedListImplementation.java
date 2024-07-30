@@ -9,7 +9,12 @@ public class LinkedListImplementation {
             next = null;
         }
 
-        public Node addNodeFront(Node head,int data){
+        public Node(int data,Node node){
+            this.data=data;
+            next=node;
+        }
+
+        public static Node addNodeFront(Node head,int data){
             Node newNode = new Node(data);
             if (head == null){
                 head=newNode;
@@ -20,20 +25,7 @@ public class LinkedListImplementation {
             }
             return head;
         }
-
-//        public Node addNodeLast(Node head,Node tail,int data){
-//            Node newNode = new Node(data);
-//            if(tail==null){
-//                head = newNode;
-//                tail = newNode;
-//            }
-//            else{
-//                tail.next=newNode;
-//                tail=newNode;
-//            }
-//            return head;
-//        }
-        public Node addNodeLast(Node head,int data){
+        public static Node addNodeLast(Node head,int data){
             Node newNode = new Node(data);
             Node temp = head;
             while (temp.next!=null){
@@ -44,7 +36,7 @@ public class LinkedListImplementation {
         }
 
 
-        public void displayList(Node head){
+        public static void displayList(Node head){
             while (head.next!=null){
                 System.out.println(head.data);
                 head = head.next;
