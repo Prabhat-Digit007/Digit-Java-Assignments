@@ -29,7 +29,8 @@ public class LongestConsecutiveSubsequence {
     }
 
     public static void main(String[] args) {
-        int[] arr = {11, 4, 13, 1, 3, 2, 5, 7, 8, 9};
+//        int[] arr = {11, 4, 13, 1, 3, 2, 5, 7, 8, 9};
+        int[] arr = {1, 2, 4, 11, 4, 13, 1, 3, 2, 5, 7, 8, 9};
         Arrays.sort(arr);
         int ans = findLongestConsecutive(arr);
         System.out.println(ans);

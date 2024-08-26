@@ -1,0 +1,4 @@
+Hey. I am inside Source.txt file
+Stardate 2457.24:
+ Detected a distress signal from a derelict freighter.
+ Investigating.”Hey. I am inside Source.txt fileStardate 2457.24: Detected a distress signal from a derelict freighter. Investigating.”

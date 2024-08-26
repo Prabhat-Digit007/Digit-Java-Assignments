@@ -1,6 +1,6 @@
 package DAY5.InsurancePolicyManagement;
 
-class Person {
+public class Person {
     String name;
     int age;
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic</title>
+    <style>
+        div{
+            margin:0 auto;
+            width: 50%;
+            padding: 50px;
+            }
+        #para{
+            color: green;
+            font-size: 20px;
+            text-align: center;
+            visibility: hidden;
+        }
+        button{
+            background-color: pink;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p id="para">Peace is a state of mind that can be
+        achieved through meditation, yoga, and
+        other practices.</p>
+    <button onclick="toggleVisibility()">Push to unveil the secret</button>
+</div>
+
+<script>
+    function toggleVisibility() {
+        var x = document.getElementById("para");
+        if (x.style.visibility === "hidden") {
+            x.style.visibility = "visible";
+        } else {
+            x.style.visibility = "hidden";
+        }
+    }
+</script>
+</body>
+</html>
